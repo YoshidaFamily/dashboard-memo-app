@@ -1,5 +1,7 @@
 # dashboard-app
 
+https://yoshidafamily.github.io/dashboard-app/
+
 その日の予定、タスク、メモなどをまとめて閲覧できるアプリ。
 
 ## 機能一覧
