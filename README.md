@@ -14,6 +14,7 @@ https://yoshidafamily.github.io/dashboard-app/
 ## 実現方式
 
 - WebAppとして開発する。
+- GitHub Pagesで公開する。別案として、GASかHeroku。
 - データは、ひとまずWebStorageに保管するものとする。
 - PWA化して、AndroidAppとしても動くようにする。
-- フレームワークは未定。まずは愚直にHTML+CSS+Javascriptの構成でいいか。
+- フレームワークは未定。
