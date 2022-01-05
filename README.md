@@ -1,6 +1,6 @@
-# dashboard-app
+# dashboard-memo-app
 
-https://yoshidafamily.github.io/dashboard-app/
+https://yoshidafamily.github.io/dashboard-memo-app/
 
 その日の予定、タスク、メモなどをまとめて閲覧できるアプリ。
 
