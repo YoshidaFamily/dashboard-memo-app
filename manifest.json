@@ -1,0 +1,8 @@
+{
+    "name": "dashboard",
+    "short_name": "dashboard",
+    "background_color": "#263238",
+    "icons": [],
+    "start_url": "./?utm_source=homescreen",
+    "display": "standalone"
+}
