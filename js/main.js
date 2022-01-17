@@ -3,49 +3,61 @@ var memoElement = document.getElementById("field_table");
 init();
 
 function init() {
+    var addMemoButton = document.getElementById("add_memo_button");
+    addMemoButton.addEventListener("click", onClickAddMemoButton);
+}
+
+function onClickAddMemoButton(event) {
+    addMemo();
 }
 
 function onClick(event) {
     var x = event.target.cellIndex;
     var y = event.target.parentElement.rowIndex;
+
+    if (x==0) {
+        editMemo(y);
+    } else {
+        delelteMemo(y)
+    }
+
+    editMemo();
 }
 
-function addCategory() {
-}
+// function addCategory() {
+// }
 
-function editCategory() {
-}
+// function editCategory() {
+// }
 
-function delelteCategory() {
-}
+// function delelteCategory() {
+// }
 
 function addMemo() {
     var tr = document.createElement("tr");
-    var td = document.createElement("td");
 
+    var td1 = document.createElement("td");
     if(document.addEventListener){
-        td.addEventListener("click" , onClick);
+        td1.addEventListener("click" , onClick);
     }else if(document.attachEvent){
-        td.attachEvent("onclick" , onClick);
+        td1.attachEvent("onclick" , onClick);
     }
+    tr.appendChild(td1);
 
-    tr.appendChild(td);
+    var td2 = document.createElement("td");
+    if(document.addEventListener){
+        td2.addEventListener("click" , onClick);
+    }else if(document.attachEvent){
+        td2.attachEvent("onclick" , onClick);
+    }
+    tr.appendChild(td2);
+
     memoElement.appendChild(tr);
 }
 
-function editMemo() {
+function editMemo(i) {
 }
 
-function delelteMemo() {
-    var tr = document.createElement("tr");
-    var td = document.createElement("td");
-
-    if(document.addEventListener){
-        td.addEventListener("click" , onClick);
-    }else if(document.attachEvent){
-        td.attachEvent("onclick" , onClick);
-    }
-
-    tr.appendChild(td);
-    memoElement.appendChild(tr);
+function delelteMemo(i) {
+    memoElement.deleteRow(i);
 }
